@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IS DOM paragraph style</title>
+</head>
+<body>
+  <p id="text">JavaScript Exercises Microcollege</p>
+  <div>
+    <button id="style" onclick="changeStyle()">Style</button>
+  </div>
+
+  <script>
+    function changeStyle() {
+      var paragraph = document.getElementById("text");
+      paragraph.style.color = "red";  // Change the color to red
+      paragraph.style.fontSize = "24px";  // Change the font size to 24 pixels
+      paragraph.style.fontWeight = "bold";  // Make the text bold
+    }
+  </script>
+</body>
+</html>

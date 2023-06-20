@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag</title>
+    <script src="./product.js"></script>
+</head>
+<link rel="stylesheet" href="./product.css">
+<body>
+    <div>
+        <label>Product Name</label>
+        <input type="text" id="eid" name="eid" value="" onkeyup="pName()"/>
+        <span id="sp1"></span>
+      </div>
+    <div>
+      <label>Brand</label>
+      <input type="text" id="ename" name="ename" value="" onkeyup="checkUser()"/>
+      <span id="sp2">***</span>
+    </div>
+    <div>
+      <label>Category</label>
+      <input type="text" id="eroll" name="eroll" value="" onkeyup="checkEroll()"/> 
+      <span id="sp3">###</span>
+    </div>
+    <div>
+      <label>Price</label>
+      <input type="text" id="basic" name="basic" value=""/>
+    </div>
+    <div>
+        <label>Quantity</label>
+        <input type="text" id="qty" name="qty" value="" onkeyup="calSalary()"/>
+    </div>
+    <div>
+      <label>GST 15%</label>
+      <input type="text" id="hra" name="hra" value=""/>
+    </div>
+    <div>
+      <label>CGST 10%</label>
+      <input type="text" id="da" name="da" value=""/>
+    </div>
+    <div>
+      <label>SGST 5%</label>
+      <input type="text" id="pf" name="pf" value=""/>
+    </div>
+    <div>
+      <label>Total Cost</label>
+      <input type="text" id="nsalary" name="nsalary" value=""/>
+    </div>
+    <div>
+      <label>Just in June Offer Included</label>
+      <input type="text" id="gsalary" name="gsalary" value=""/>
+    </div>
+  
+  <div>
+    <table>
+      <thead>
+        <tr>
+         
+          <th>Price</th>
+          <th>GST</th>
+          <th>CGST</th>
+          <th>SGST</th>
+          <th>Total Cost</th>
+          <th>Price With Offer</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyid">
+      
+      </tbody>
+    </table>
+  </div>
+    
+</body>
+</html>

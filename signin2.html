@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signin2.css">
+</head>
+<body>
+    <form action="action_page.php" method="post">
+        <h4 id="Signin">Sign in</h4>
+        <p id="line">Sign in with your Username and Password</p>
+        <!-- <div class="imgcontainer"> 
+        <img src="" alt="Avatar" class="avatar">
+        </div>-->
+        <div class="sign">
+          <label id="label1" for="uname"><b>Your Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+        <div>
+          <label id="label2" for="psw"><b>Your Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <div>
+          <button type="submit">Login</button>
+          <label id="label3">
+            <input  type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <span class="psw">Not a member?<a href="#">Forgot Password?</a></span>
+        </div>
+        <!-- <div class="sign" style="background-color:#f1f1f1"> -->
+          <!-- <button type="button" class="cancelbtn">Cancel</button> 
+        </div>-->
+          
+      </form>
+</body>
+</html>
